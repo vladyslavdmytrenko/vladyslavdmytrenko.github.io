@@ -1,0 +1,126 @@
+body{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    background: #171a1e;
+    color:#ADBCC1;
+}
+img{
+    float: right;
+}
+.game {
+    display: inline-block;
+    position: absolute;
+    top: 30%; left: 40%;
+    margin: 5px;
+    margin-left:0;  
+}
+.minefield{
+   text-align: center;
+   font-size: 70px;
+   color: green;
+   border: solid 2px #2D333B;
+   border-radius: 2px;
+   /* box-shadow: 0 2px 2px darken(  #171a1e, 2% );  */ 
+}
+.cell {
+   width: 70px;
+   height: 70px;
+   float: left;
+   box-sizing: border-box;
+   font-size: 30px;
+   padding-top: 13px;
+   text-align: center;
+   color: #ADBCC1;
+   border: solid 2px #2D333B;
+   opacity:0.7
+}
+.cell.opened{
+    background: none;
+    background-color: #2D333B;
+}
+#startOver{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    height: 45px;
+    width: 140px;
+    color: #171a1e;
+    line-height: 40px;
+    margin: 10px;
+    opacity: 0.7;
+    background: #24d6a6;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+#startOver:hover {
+    opacity: 1;
+}
+.nowStar{
+    display: inline-block;
+}
+.nowEmerald{
+    display: inline-block;
+}
+.menu{
+    display: inline-block;
+    position: absolute;
+    top:20%; left: 25%
+}
+
+.progress{
+    display: inline-block;
+    position: absolute;
+    top: 30%; left: 25%;
+    width: 140px;
+    /*height: 336px;*/
+    margin: 5px;
+    padding: 7px;
+    border: solid 2px #2D333B;
+    border-radius: 2px;
+    z-index: 100;    
+}
+.statistics{
+    height: 50px;
+    width: 350px;
+    display: inline-block;
+    position: absolute;
+    top: 20%; left: 40%;
+    text-align: center;
+    border: solid 2px #2D333B;
+    border-radius: 2px;
+}
+#wins{
+  margin-top:7px; 
+  font-size: 30px;
+}
+
+.cell.flag.open {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698898-icon-17-flag-64.png);
+}
+.cell.Emerald.opened {
+    /*background-image: url('http://findicons.com/files/icons/2344/faenza/48/emerald_theme_manager_icon.png');*/
+    background: #24d6a6;
+    border-radius: 20px;
+    opacity: 0.4;
+    color: black;
+}
+.cell.Star.opened{
+     background-image: url(https://cdn2.iconfinder.com/data/icons/greenline/512/star-64.png);
+    color: black;
+}
+.cell.bomb.opened {
+    background-image: url(http://icons.iconarchive.com/icons/alecive/flatwoken/64/Apps-Gnome-Mines-icon.png);
+    color: none;
+}
+.cell:hover{
+    border-color: #24d6a6;
+    transition: all 0.4s ease;
+} 
+.cell.opened:hover{
+    opacity:1;
+    border: solid 2px #2D333B;
+}                
+.cell:active{
+ border-color: orange;
+}
